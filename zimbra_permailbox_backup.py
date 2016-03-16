@@ -54,7 +54,7 @@ configfile='/etc/zimbra_permailbox_backup.conf'
 if file_exists_and_non_zero(configfile):
 	auths, zimbraauths, nagioshosts, mailbackupdir = config_load(configfile)
 else:
-	print "Config file '"+configfile+"' is missing. Grab an example from https://github.com/garithd/zimbra-permailbox-backup"
+	print "Config file '"+configfile+"' is missing. Grab an example from https://github.com/yogurtnaturalny/zimbra-permailbox-backup"
 	sys.exit(1)
 
 logfile='/var/log/zimbra_permailbox_backup.log'
